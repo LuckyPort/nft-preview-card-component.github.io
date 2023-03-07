@@ -39,7 +39,6 @@ span {
 hr {
   background: var(--dark-blue-line);
   margin-top: 1em;
-  height: 0.1px;
 }
 .kartu {
   position: relative;
