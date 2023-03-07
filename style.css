@@ -1,0 +1,145 @@
+:root{
+    --primary-soft-blue:  hsl(215, 51%, 70%);
+    --primary-cyan: hsl(178, 100%, 50%);
+    --dark-blue-main :  hsl(217, 54%, 11%);
+    --dark-blue-card :   hsl(216, 50%, 16%);
+    --dark-blue-line :  hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font: "Outfit";
+    --paragraph : 14px;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+main{
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--dark-blue-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span{
+    font-family: var(--font);
+    color: var(--White)
+}
+hr{
+    background: var(--dark-blue-line);
+    margin-top: 1em;
+    height: 0.1px;
+}
+.kartu{
+    position: relative;
+    height: 470px;
+    width: 300px;
+    background-color: var(--dark-blue-card);
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: 0 20px 0 8px #0c1729;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+}
+.kartu-atas{
+    position: relative;
+    flex: 1.2;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+}
+.kartu > .kartu-atas > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.kartu > .kartu-bawah{
+    box-sizing: border-box;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    padding:0 15px 15px 15px;
+}
+.kartu > .kartu-bawah > h3{
+    margin: 12px 0  ;
+}
+.kartu > .kartu-bawah > p{
+    color: var(--primary-soft-blue);
+    font-weight: 300    ;
+    font-size: 14px;
+}
+.kartu > .kartu-bawah > span{
+    color: var(--primary-cyan);
+    font-size: 14px;
+}
+.kartu > .kartu-bawah > img{
+    vertical-align: sub;
+    margin-right: 10px;
+}
+.left {
+    float: right;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+.left > img{
+    vertical-align: sub;
+    margin-right: 5px;
+}
+.line{
+    min-width: 100%;
+    background-color: var(--dark-blue-line);
+    height: 0.5px;
+    margin-top: 1em;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+.person{
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    float: left;
+}
+.attrb{
+    vertical-align: middle;
+    font-size: 14px;
+    color: var(--primary-soft-blue);
+}
+.background{
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    background-color: hsl(216, 65%, 11%);
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}
