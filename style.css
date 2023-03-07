@@ -44,7 +44,7 @@ hr{
 }
 .kartu{
     position: relative;
-    height: 470px;
+    height: 500px;
     width: 300px;
     background-color: var(--dark-blue-card);
     border-radius: 10px;
@@ -58,12 +58,10 @@ hr{
 .kartu-atas{
     position: relative;
     flex: 1.2;
-    position: relative;
-    overflow: hidden;
-    padding: 15px;
+    padding: 15px;  
 }
 .kartu > .kartu-atas > img{
-    height: 100%;
+    object-fit: contain;
     width: 100%;
     border-radius: 10px;
 }
@@ -105,7 +103,7 @@ hr{
 .line{
     min-width: 100%;
     background-color: var(--dark-blue-line);
-    height: 0.5px;
+    height: 3px;
     margin-top: 1em;
 }
 .bottom{
@@ -127,7 +125,7 @@ hr{
     color: var(--primary-soft-blue);
 }
 .background{
-    height: 550px;
+    height: 600px;
     width: 350px;
     position: absolute;
     background-color: hsl(216, 65%, 11%);
